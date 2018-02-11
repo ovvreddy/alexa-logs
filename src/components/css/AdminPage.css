@@ -1,0 +1,88 @@
+
+.app-header {
+  padding: 0.8em 0;
+  background-color: #152939;
+}
+
+.app-panel {
+  display: flex; font-size: 0.8em;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  justify-content: space-between;
+}
+.app-screen-panel {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.2em 0;
+  font-size: 3em; font-weight: 300;
+}
+.app-screen-panel > .logo {
+  margin-right: 0.7rem;
+}
+.app-screen-panel > .logo > img {
+      transform: translateY(8%);
+
+}
+.app-screen-panel > .text.theme-text-header-idle {
+  pointer-events: none;
+}
+
+/* Data table */
+.app-content { padding: 2em 0; }
+.no-data-wrapper {
+  font-family: 'Open Sans';
+  font-weight: 300; font-size: 5rem;
+  text-align: center; padding-top: 1rem;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.data-table {
+  font-family: 'Lato', Arial, sans-serif;
+  box-shadow: 0 2em 3em rgba(0, 0, 0, 0.1);
+}
+.data-row {
+  background-color: #fafafa;
+  font-size: 0.8em; cursor: pointer;
+  padding: 0.1rem 0;
+}
+.data-row-header {
+  background-color: #596377;
+  font-weight: bold;
+}
+
+.data-table > .data-row:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.table-row { display: flex; }
+.data-table > .table-row:first-child { border-radius: 4px 4px 0 0; }
+.data-table > .table-row:last-child { border-radius: 0 0 4px 4px; }
+
+.data-item { min-width: 3rem; }
+.data-row > .data-item { padding: 0.5rem 1rem; }
+.data-row-header > .data-item { padding: 0.8rem 1rem; }
+
+.col-fixed {}
+.col-f1 { flex: 1; }
+.col-f2 { flex: 2; }
+
+.data-sn { font-weight: bold; text-align: center; }
+
+/* Action buttons */
+.btn-panel {}
+.app-content > .btn-panel {
+  text-align: right; margin-bottom: 2rem;
+}
+
+.btn-panel > button { margin-right: 1rem; }
+.btn-panel > button:last-child { margin-right: 0; }
+
+.action-btn {
+  border: none; border-radius: 4px;
+  color: #fff; background-color: #596377;
+  font-family: 'Lato'; font-size: 0.9rem;
+  font-weight: bold; padding: 0.5em 1.2em;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.action-btn:hover { background-color: #4b5363; }
+.action-btn:active { background-color: #152939; }
